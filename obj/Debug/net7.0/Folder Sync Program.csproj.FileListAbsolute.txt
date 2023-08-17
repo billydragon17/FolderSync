@@ -1,0 +1,21 @@
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\bin\Debug\net7.0\Folder Sync Program.exe
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\bin\Debug\net7.0\Folder Sync Program.deps.json
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\bin\Debug\net7.0\Folder Sync Program.runtimeconfig.json
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\bin\Debug\net7.0\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\bin\Debug\net7.0\Folder Sync Program.pdb
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.AssemblyInfoInputs.cache
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.AssemblyInfo.cs
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.csproj.CoreCompileInputs.cache
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\refint\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.pdb
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\Folder Sync Program.genruntimeconfig.cache
+C:\Users\longb\OneDrive\Dokumente\GitHub\Folder Sync Program\obj\Debug\net7.0\ref\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.AssemblyInfoInputs.cache
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.AssemblyInfo.cs
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.csproj.CoreCompileInputs.cache
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\refint\Folder Sync Program.dll
+C:\Users\longb\OneDrive\Dokumente\GitHub\FolderSyncProgram\obj\Debug\net7.0\Folder Sync Program.pdb
