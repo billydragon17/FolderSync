@@ -3,4 +3,4 @@ Program that syncs 2 folders with specified intervals
 
 # Terminal commands
 
-dotnet run -- <sourceFilePath> <replicaFilePath> <intervalInSeconds>
+"dotnet run -- <sourceFilePath> <replicaFilePath> <intervalInSeconds>"
