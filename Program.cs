@@ -11,13 +11,15 @@ class FolderSync
     {
         if (args.Length < 3)
         {
-            Console.WriteLine("Usage: FolderSync.exe <sourceFolderPath> <replicaFolderPath> <syncIntervalInSeconds>");
+            Console.WriteLine("Usage: FolderSync.exe <sourceFolderPath> <replicaFolderPath> <logFilePath> <syncIntervalInSeconds>");
             return;
         }
 
         string sourceFolderPath = args[0];
         string replicaFolderPath = args[1];
-        int syncIntervalInSeconds = int.Parse(args[2]);
+        string logFilePath = args[2];
+        int syncIntervalInSeconds = int.Parse(args[3]);
+
 
         if (!Directory.Exists(sourceFolderPath))
         {
@@ -31,7 +33,6 @@ class FolderSync
             Directory.CreateDirectory(replicaFolderPath);
         }
 
-        string logFilePath = Path.Combine(replicaFolderPath, "sync_log.txt");
 
         while (true)
         {
