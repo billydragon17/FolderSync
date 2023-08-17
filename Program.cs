@@ -19,13 +19,13 @@ class FolderSync
         string replicaFolderPath = args[1];
         int syncIntervalInSeconds = int.Parse(args[2]);
 
-        if (!Directory.Exists(sourceFolderPath))        // Source doesn't exist
+        if (!Directory.Exists(sourceFolderPath))
         {
             Console.WriteLine("Source folder does not exist.");
             return;
         }
 
-        if (!Directory.Exists(replicaFolderPath))       // Replica doesn't exist
+        if (!Directory.Exists(replicaFolderPath))
         {
             Console.WriteLine("Replica folder does not exist. Creating...");
             Directory.CreateDirectory(replicaFolderPath);
@@ -53,7 +53,7 @@ class FolderSync
 
             if (!File.Exists(replicaFile) || !IsFileContentEqual(sourceFile, replicaFile))
             {
-                Console.WriteLine($"Copying {relativePath}...");
+                LogToFileAndConsole($"Copied {relativePath}.", logFilePath);
                 Directory.CreateDirectory(Path.GetDirectoryName(replicaFile));
                 File.Copy(sourceFile, replicaFile, true);
             }
@@ -62,11 +62,11 @@ class FolderSync
         foreach (string replicaFile in Directory.GetFiles(replicaPath, "*", SearchOption.AllDirectories))
         {
             string relativePath = replicaFile.Substring(replicaPath.Length + 1); // Get relative path
-            string sourceFile = Path.Combine(sourcePath, relativePath);     
+            string sourceFile = Path.Combine(sourcePath, relativePath);
 
             if (!File.Exists(sourceFile))
             {
-                Console.WriteLine($"Removing {relativePath}...");
+                LogToFileAndConsole($"Removed {relativePath}.", logFilePath);
                 File.Delete(replicaFile);
             }
         }
@@ -75,9 +75,17 @@ class FolderSync
         Console.WriteLine("Synchronization complete.");
     }
 
+    
+
+    static void LogToFileAndConsole(string message, string logFilePath)
+    {
+        Console.WriteLine(message);
+        File.AppendAllText(logFilePath, $"{DateTime.Now}: {message}\n");
+    }
+
     static bool IsFileContentEqual(string file1, string file2)
     {
-        using (var md5 = MD5.Create())
+        using (var md5 = MD5.Create())      // Hash files and compare hash values
         {
             byte[] hash1 = md5.ComputeHash(File.ReadAllBytes(file1));
             byte[] hash2 = md5.ComputeHash(File.ReadAllBytes(file2));
